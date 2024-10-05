@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sube tu Juego - Tienda de Videojuegos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Sube tu Juego</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="juegos.html">Juegos</a>
+      <a href="subir-juego.html">Sube tu Juego</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="formulario">
+      <h2>Registro de Desarrollador</h2>
+      <form id="subirJuegoForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="nombreJuego">Nombre del Juego:</label>
+        <input type="text" id="nombreJuego" name="nombreJuego" required>
+
+        <label for="linkJuego">Enlace al Juego:</label>
+        <input type="url" id="linkJuego" name="linkJuego" required>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Tienda de Videojuegos</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
+

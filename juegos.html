@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>"GameNest"</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Lista de Juegos</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="juegos.html">Juegos</a>
+      <a href="subir-juego.html">Sube tu Juego</a>
+    </nav>
+  </header>
+
+  <section class="filtro">
+    <div class="categorias">
+      <button class="categoria-btn" data-categoria="todos">ALL</button>
+      <button class="categoria-btn" data-categoria="free-to-play">Free to Play</button>
+      <button class="categoria-btn" data-categoria="accion">Action</button>
+      <button class="categoria-btn" data-categoria="competitivo">E-Sport</button>
+      <button class="categoria-btn" data-categoria="aventura">Adventure</button>
+      <button class="categoria-btn" data-categoria="favoritos">Favorites</button> 
+    </div>
+  </section>
+  
+  <section class="lista-juegos">
+    <div class="juego" data-categoria="free-to-play" data-descripcion="Juega a la versión mejorada del título original lanzado en 1997 para Nintendo 64. Han pasado años desde que el infierno invadió la Tierra. El complejo de investigación de la UAC en Marte, en cuarentena por el bien de la humanidad, quedó olvidado... hasta ahora." data-jugar="true">
+      <img src="https://cdn1.epicgames.com/offer/0ea70edafcc54b3191e262bbb6971981/EGS_DOOM64_idSoftwareNightdiveStudios_S2_1200x1600-3572e6321f521e4003f476ae4088f190" alt="Juego 1" class="juego-img">
+      <h3>Doom 64</h3>
+      <button class="favorito">⭐</button>
+    </div>
+    
+    <div class="juego" data-categoria="accion" data-descripcion="Sigue la historia del sobreviviente Leon Scott Kennedy, ahora un agente de Estados Unidos al cual se le asignó la misión de rescatar a la hija del actual presidente del país, Ashley Graham, quien había sido raptada por un grupo terrorista desconocido." data-jugar="false">
+      <img src="https://m.media-amazon.com/images/M/MV5BZWY3ZjRiNTctYzU2My00NDIwLWI3NTAtNmUwZDBlZjlhYjI4XkEyXkFqcGc@._V1_.jpg" alt="Juego 2" class="juego-img">
+      <h3>Resident evil 4</h3>
+      <button class="favorito">⭐</button>
+    </div>
+    
+    <div class="juego" data-categoria="free-to-play" data-descripcion="Tetris® 99​ es videojuego multijugador en línea del género Battle Royale publicado por Nintendo en el que 99 jugadores se enfrentan entre si para ver quien saldra victorioso" data-jugar="true">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvjS7DQphHbpsoMmWTJ-qL6snd4pGxVwWu1A&s" alt="Juego 3" class="juego-img">
+      <h3>Tetris 99</h3>
+      <button class="favorito">⭐</button>
+    </div>
+    
+    <div class="juego" data-categoria="competitivo" data-descripcion="Es la tercera entrega de la serie Super Smash Bros. y presenta un amplio elenco de personajes icónicos de Nintendo y otras franquicias, como Mario, Link, Donkey Kong, y Sonic. El juego se centra en combates caóticos en los que los jugadores utilizan ataques, combos y objetos para eliminar a sus oponentes." data-jugar="false">
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/f3/SSBB_Cover.jpg" alt="Juego 4" class="juego-img">
+        <h3>Super smash bros Brawl</h3>
+        <button class="favorito">⭐</button>
+      </div>
+    
+      
+    <div class="juego" data-categoria="aventura" data-descripcion="En un futuro en el que colosales máquinas dominan la Tierra, los reductos de la humanidad sobreviven en tribus entre las ruinas de nuestra extinta civilización." data-jugar="false">
+        <img src="https://blog.latam.playstation.com/tachyon/sites/3/2024/09/3dc96072bde47b42375df251225373a6fbaaca15.jpg?resize=1088%2C612&crop_strategy=smart" alt="Juego 5" class="juego-img">
+        <h3>Horizon zero dawn (remastered)</h3>
+        <button class="favorito">⭐</button>
+      </div>
+    
+      
+    <div class="juego" data-categoria="competitivo" data-descripcion="Tom Clancy's Rainbow Six® Siege es un shooter táctico realista por equipos donde una cuidadosa planificación y ejecución son claves para la victoria." data-jugar="false">
+        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202210/2019/at0SahvPr4sGm3KX42HDFI1K.jpg" alt="Juego 6" class="juego-img">
+        <h3>Rainbow six siege</h3>
+        <button class="favorito">⭐</button>
+      </div>
+    
+  </section>
+  
+  
+  <div id="detalles-juego" class="detalles-juego">
+    <div class="detalles-content">
+      <span class="close-detalles">&times;</span>
+      <img src="" alt="Imagen del juego" id="detalles-img">
+      <h3 id="detalles-titulo"></h3>
+      <p id="detalles-descripcion"></p>
+      <button id="btn-jugar" class="btn-jugar" style="display: none;">Jugar</button>
+    </div>
+  </div>
+  
+  
+  <footer>
+    <p>&copy; 2024 Tienda de Videojuegos</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
